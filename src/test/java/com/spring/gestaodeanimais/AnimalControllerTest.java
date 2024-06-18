@@ -47,5 +47,68 @@ public class AnimalControllerTest {
 				.andExpect(jsonPath("$.nome").value("Rex"));
 	}
 
-	// Adicione mais testes conforme necessário
+	@Test
+	void getId() {
+	}
+
+	@Test
+	void setId() {
+	}
+
+	@Test
+	void getNome() {
+	}
+
+	@Test
+	void setNome() {
+	}
+
+	@Test
+	void getEspecie() {
+	}
+
+	@Test
+	void setEspecie() {
+	}
+
+	@Test
+	void getRaca() {
+	}
+
+	@Test
+	void setRaca() {
+	}
+
+	@Test
+	void getIdade() {
+	}
+
+	@Test
+	void setIdade() {
+	}
+
+	@Test
+	void getSaude() {
+	}
+
+	@Test
+	void setSaude() {
+	}
+
+	@Test
+	void getLocalizacao() {
+	}
+
+	@Test
+	void setLocalizacao() {
+	}
+
+	@Test
+	void testSetId() {
+	}
+
+	@Test
+	void testGetId() {
+	}
+	
 }
