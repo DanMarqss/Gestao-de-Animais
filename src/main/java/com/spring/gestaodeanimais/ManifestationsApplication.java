@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GestaodeanimaisApplication {
+public class ManifestationsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GestaodeanimaisApplication.class, args);
+		SpringApplication.run(ManifestationsApplication.class, args);
 	}
 
 }
