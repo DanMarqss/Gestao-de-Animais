@@ -9,8 +9,11 @@ import java.util.Optional;
 @Service
 public class AnimalService {
 
-    @Autowired
-    private AnimalRepository animalRepository;
+    private final AnimalRepository animalRepository;
+
+    public AnimalService(AnimalRepository animalRepository) {
+        this.animalRepository = animalRepository;
+    }
 
     public Optional<Animal> findById(Long id) {
         return animalRepository.findById(id);
