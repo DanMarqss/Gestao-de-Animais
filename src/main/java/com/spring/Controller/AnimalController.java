@@ -52,5 +52,30 @@ public class AnimalController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("Animal não encontrado com o ID: " + animalId);
         }
+
     }
+    @PutMapping("/{animalId}")
+    public ResponseEntity<?> updateAnimal(
+            @PathVariable @Positive(message = "O ID do animal deve ser um número positivo") Long animalId,
+            @Valid @RequestBody Animal updatedAnimal) {
+
+        Optional<Animal> existingAnimalOpt = animalService.findById(animalId);
+        if (existingAnimalOpt.isPresent()) {
+            Animal existingAnimal = existingAnimalOpt.get();
+
+            // Atualiza os dados do animal existente com os dados fornecidos na solicitação
+            existingAnimal.setNome(updatedAnimal.getName());
+            existingAnimal.setIdade(updatedAnimal.getIdade());
+            // Adicione mais campos conforme necessário
+
+            // Salva o animal atualizado
+            Animal savedAnimal = animalService.save(existingAnimal);
+
+            return ResponseEntity.ok(savedAnimal);
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Animal não encontrado com o ID: " + animalId);
+        }
+    }
+
 }

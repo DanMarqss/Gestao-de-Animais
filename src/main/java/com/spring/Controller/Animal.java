@@ -16,4 +16,11 @@ package com.spring.Controller;public class Animal {
 
     public void setLocalizacao(String s) {
     }
+
+    public String getName() {
+        return null;
+    }
+
+    public int getIdade() {
+    }
 }
