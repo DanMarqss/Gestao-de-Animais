@@ -1,7 +1,7 @@
 package com.spring.Service;
 
-import com.spring.Controller.Animal;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.spring.Model.Animal;
+import com.spring.Repository.AnimalRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

@@ -1,7 +1,7 @@
 package com.spring.gestaodeanimais;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.spring.Controller.Animal;
+import com.spring.Model.Animal;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

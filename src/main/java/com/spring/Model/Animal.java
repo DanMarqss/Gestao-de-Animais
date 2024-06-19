@@ -51,7 +51,7 @@ public class Animal {
         this.id = id;
     }
 
-    public String getNome() {
+    public String getName() {
         return nome;
     }
 

@@ -1,5 +1,6 @@
 package com.spring.Controller;
 
+import com.spring.Model.Animal;
 import com.spring.Service.AnimalService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
